@@ -62,7 +62,7 @@ post img {
 .x-small {
 	font-size: 70%
 }
-.eng {
+.chn {
 	display: none;
 }
 
@@ -117,25 +117,26 @@ post img {
 
 
 
-ul.feature,
+
+ul.image,
 ul.about-list {
 	margin: 0;
 	padding: 0;
 }
-ul.feature li img {
-	height: 70px;
-} 
-ul.feature li {
+ul.image li img {
+	width: 100%;
+}
+
+ul.image li {
 	list-style: none;
 	margin: 0;
 	display: inline-block;
 	border-top: 4px solid white;
 	text-align: center;
 	width: 32.9%;
-	background: #eee;
-	padding: 1.5em 0;
 }
-ul.feature li:hover {
+
+ul.image li:hover {
 	border-top: 4px solid #800000;
 }
 ul.about-list li {
@@ -159,9 +160,14 @@ ul.about-list li {
 }
 
 
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-/* Carousel base class */
+
+
+
+
+
+
+
+/* ====== Carousel ====== */
 .carousel {
 	height: 440px;
 }
@@ -174,3 +180,67 @@ ul.about-list li {
 	height: 440px;
 	background-color: #777;
 }
+
+
+
+
+
+
+/* ====== feature-logo ====== */
+.feature-logo {
+	width: 100%;
+}
+.feature-logo tr td {
+	width: 33.3%;
+	text-align: center;
+	background: #eee;
+	padding: 1em;
+	border-bottom: 3px solid white;
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+}
+.feature-logo tr td:hover {
+	border-bottom: 3px solid #800000;
+}
+.feature-logo tr td img {
+	width: 70px;
+}
+
+
+
+
+
+
+/* ====== Waterfall ====== */
+.waterfall {
+	column-count: 3;
+	column-gap: 1em;
+}
+@media screen and (max-width: 550px) {
+	.waterfall {
+		column-count: 2;
+	}
+}
+@media screen and (max-width: 400px) {
+	.waterfall {
+		column-count: 1;
+	}
+}
+
+.waterfall .panel {
+	display: inline-block;
+}
+.waterfall .panel-body {
+	padding: 0;
+}
+.waterfall .panel-body img {
+	width: 100%;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+}
+.waterfall a:hover {
+	opacity: 0.8;
+}
+
+
+
