@@ -195,12 +195,12 @@ ul.about-list li {
 	text-align: center;
 	background: #eee;
 	padding: 1em;
-	border-bottom: 3px solid white;
+	border-top: 3px solid white;
 	border-left: 1px solid white;
 	border-right: 1px solid white;
 }
 .feature-logo tr td:hover {
-	border-bottom: 3px solid #800000;
+	border-top: 3px solid #800000;
 }
 .feature-logo tr td img {
 	width: 70px;
